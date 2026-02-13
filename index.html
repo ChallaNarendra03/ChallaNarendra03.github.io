@@ -1,47 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Narendra | DevOps Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
-    body { font-family: Arial; max-width: 900px; margin: auto; padding: 20px; }
-    h1 { color: #1f2937; }
-    h2 { color: #2563eb; }
-    a { color: #2563eb; text-decoration: none; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #0f172a;
+      color: #f1f5f9;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      color: #38bdf8;
+      margin-top: 40px;
+      border-bottom: 1px solid #334155;
+      padding-bottom: 5px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #94a3b8;
+      margin-bottom: 20px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #1e293b;
+      padding: 6px 12px;
+      border-radius: 20px;
+      margin: 5px 5px 5px 0;
+      font-size: 14px;
+    }
+
+    .project {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    .contact a {
+      margin-right: 15px;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      color: #64748b;
+      font-size: 14px;
+    }
   </style>
 </head>
+
 <body>
+  <div class="container">
 
-<h1>Narendra</h1>
-<p><b>Junior DevOps Engineer</b></p>
-<p>AWS | Docker | Kubernetes | Terraform | CI/CD</p>
+    <h1>Narendra</h1>
+    <div class="subtitle">Junior DevOps Engineer | Cloud & Automation Enthusiast</div>
 
-<h2>About Me</h2>
-<p>
-I am a Junior DevOps Engineer passionate about cloud infrastructure, automation,
-and building production-ready systems.
-</p>
+    <h2>About Me</h2>
+    <p>
+      Passionate DevOps Engineer focused on building scalable cloud infrastructure,
+      automating deployments, and creating production-ready systems using AWS,
+      Docker, Kubernetes, and CI/CD pipelines.
+    </p>
 
-<h2>Skills</h2>
-<ul>
-  <li>AWS (EC2, VPC, IAM)</li>
-  <li>Docker & Kubernetes</li>
-  <li>Git & GitHub Actions</li>
-  <li>Linux & Bash</li>
-  <li>Terraform</li>
-</ul>
+    <h2>Technical Skills</h2>
+    <div class="badge">AWS (EC2, VPC, IAM)</div>
+    <div class="badge">Docker</div>
+    <div class="badge">Kubernetes</div>
+    <div class="badge">GitHub Actions</div>
+    <div class="badge">Terraform</div>
+    <div class="badge">Linux & Bash</div>
 
-<h2>Projects</h2>
-<ul>
-  <li>CI/CD Pipeline using GitHub Actions</li>
-  <li>Kubernetes Production Deployment</li>
-  <li>AWS Infrastructure with Terraform</li>
-</ul>
+    <h2>Projects</h2>
 
-<h2>Contact</h2>
-<p>
-<a href="https://github.com/yourusername">GitHub</a> |
-<a href="https://linkedin.com/in/yourlinkedin">LinkedIn</a>
-</p>
+    <div class="project">
+      <h3>CI/CD Pipeline – Docker + AWS EC2</h3>
+      <p>
+        Built an automated CI/CD pipeline using GitHub Actions that builds
+        Docker images, pushes to Docker Hub, and deploys automatically to AWS EC2.
+      </p>
+      <a href="https://github.com/ChallaNarendra03/cicd-docker-aws" target="_blank">
+        View Project →
+      </a>
+    </div>
 
+    <div class="project">
+      <h3>Kubernetes Production Deployment</h3>
+      <p>
+        Deployed containerized applications with rolling updates,
+        scaling, and high availability using Kubernetes.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Infrastructure as Code with Terraform</h3>
+      <p>
+        Provisioned AWS infrastructure including VPC, EC2, and security groups
+        using Terraform for automated environment setup.
+      </p>
+    </div>
+
+    <h2>Contact</h2>
+    <div class="contact">
+      <a href="https://github.com/ChallaNarendra03" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a>
+    </div>
+
+    <footer>
+      © 2026 Narendra | DevOps Engineer
+    </footer>
+
+  </div>
 </body>
 </html>
