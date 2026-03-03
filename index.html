@@ -1,63 +1,176 @@
-<section id="projects" style="padding: 60px 20px; background-color: #0f172a; color: white;">
-  <h2 style="text-align:center; margin-bottom:40px;">🚀 My Projects</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Narendra Challa | DevOps Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-  <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:30px;">
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0f172a;
+    color: white;
+}
 
-    <!-- DR Reminder Bot Project Card -->
-    <div style="
-      background: linear-gradient(145deg, #1e293b, #0f172a);
-      padding: 25px;
-      width: 320px;
-      border-radius: 15px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-      transition: transform 0.3s ease;
-    "
-    onmouseover="this.style.transform='scale(1.05)'"
-    onmouseout="this.style.transform='scale(1)'"
-    >
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg,#1e293b,#0f172a);
+}
 
-      <h3 style="margin-bottom:15px;">🤖 DR Reminder Telegram Bot</h3>
+header img {
+    width: 150px;
+    border-radius: 50%;
+    border: 4px solid #38bdf8;
+}
 
-      <p style="font-size:14px; line-height:1.6;">
-        A smart Telegram bot built using Python & Flask that sends
-        automated caring daily reminders and scheduled messages.
-        Deployed on Render cloud infrastructure.
-      </p>
+h1 { margin: 15px 0 5px; }
+h2 { text-align: center; margin-bottom: 30px; }
 
-      <p style="font-size:13px; margin-top:15px; color:#38bdf8;">
-        Tech Stack: Python • Flask • Docker • Render • GitHub
-      </p>
+section { padding: 60px 20px; }
 
-      <div style="margin-top:20px; display:flex; gap:10px;">
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
 
-        <a href="https://your-render-url.onrender.com" target="_blank">
-          <button style="
-            padding:8px 15px;
-            border:none;
-            border-radius:8px;
-            background:#22c55e;
-            color:white;
-            cursor:pointer;
-          ">
-            🌐 Live Demo
-          </button>
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.live { background: #22c55e; color: white; }
+.git { background: #3b82f6; color: white; }
+
+.skills span {
+    background: #334155;
+    padding: 8px 12px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+}
+
+a { text-decoration: none; }
+
+@media (max-width: 768px) {
+    header img { width: 120px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <!-- Replace with your photo link -->
+    <img src="your-photo.jpg" alt="Narendra">
+    <h1>Narendra Challa</h1>
+    <p>Aspiring DevOps & Cloud Engineer</p>
+</header>
+
+<section class="container">
+    <h2>👨‍💻 About Me</h2>
+    <div class="card">
+        <p>
+            Passionate DevOps and Cloud enthusiast with hands-on experience in
+            Docker, Kubernetes, AWS, Terraform, CI/CD and Cloud deployments.
+            I build real-world cloud-based applications and automation systems.
+        </p>
+    </div>
+</section>
+
+<section class="container">
+    <h2>🛠 Skills</h2>
+    <div class="skills">
+        <span>AWS</span>
+        <span>Docker</span>
+        <span>Kubernetes</span>
+        <span>Terraform</span>
+        <span>Linux</span>
+        <span>CI/CD</span>
+        <span>GitHub Actions</span>
+        <span>Python</span>
+        <span>Flask</span>
+    </div>
+</section>
+
+<section class="container">
+    <h2>🚀 Projects</h2>
+
+    <!-- Telegram Bot -->
+    <div class="card">
+        <h3>🤖 DR Reminder Telegram Bot</h3>
+        <p>
+            Smart Telegram bot built using Python & Flask.
+            Sends automated caring daily reminders and scheduled messages.
+            Deployed on Render cloud.
+        </p>
+
+        <a href="https://t.me/YOUR_BOT_USERNAME" target="_blank">
+            <button class="live">Open Telegram Bot</button>
         </a>
 
         <a href="https://github.com/ChallaNarendra03/dr-reminder" target="_blank">
-          <button style="
-            padding:8px 15px;
-            border:none;
-            border-radius:8px;
-            background:#3b82f6;
-            color:white;
-            cursor:pointer;
-          ">
-            💻 GitHub
-          </button>
+            <button class="git">GitHub Repo</button>
         </a>
-
-      </div>
     </div>
 
-  </div>
+    <!-- CloudVault Project -->
+    <div class="card">
+        <h3>☁ CloudVault - Cloud Storage App</h3>
+        <p>
+            Google Drive-like storage application built using Flask,
+            SQLAlchemy and deployed on Render.
+        </p>
+
+        <a href="https://your-cloudvault-url.onrender.com" target="_blank">
+            <button class="live">Live Demo</button>
+        </a>
+
+        <a href="https://github.com/ChallaNarendra03/cloudvault" target="_blank">
+            <button class="git">GitHub Repo</button>
+        </a>
+    </div>
+
 </section>
+
+<section class="container">
+    <h2>📞 Contact Me</h2>
+    <div class="card">
+        <p>Email: your-email@gmail.com</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">View Profile</a></p>
+        <p>GitHub: <a href="https://github.com/ChallaNarendra03" target="_blank">ChallaNarendra03</a></p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Narendra Challa | DevOps Portfolio
+</footer>
+
+</body>
+</html>
